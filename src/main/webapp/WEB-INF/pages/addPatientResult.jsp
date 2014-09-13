@@ -94,23 +94,23 @@
 							<tbody>
 								<tr>
 									<td><strong>Nombre</strong></td>
-									<td>${patient.name}</td>
+									<td><span class="patientName">${patient.name}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Apellidos</strong></td>
-									<td>${patient.lastName}</td>
+									<td><span class="patientLastName">${patient.lastName}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Tel&eacute;fono</strong></td>
-									<td>${patient.telephone}</td>
+									<td><span class="patientTelephone">${patient.telephone}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Tipo de documento de identidad</strong></td>
-									<td>${patient.identificationType}</td>
+									<td><span class="patientId">${patient.identificationType}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Documento de identidad</strong></td>
-									<td>${patient.identification}</td>
+									<td><span class="patientId">${patient.identification}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Salud prepagada</strong></td>

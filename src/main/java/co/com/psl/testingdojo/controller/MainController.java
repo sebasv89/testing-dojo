@@ -367,9 +367,12 @@ public class MainController {
 	
 	@RequestMapping("/error404")
 	public ModelAndView getError404Page(){
-		return new ModelAndView("error404");
+		return new ModelAndView("instructions");
 	}
+	
 
+
+	
 	public static Map<String, PersistenceObject> getPersistenceObjectMap() {
 		return persistenceObjectMap;
 	}

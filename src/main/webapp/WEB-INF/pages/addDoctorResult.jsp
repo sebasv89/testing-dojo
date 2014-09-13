@@ -94,23 +94,23 @@
 							<tbody>
 								<tr>
 									<td><strong>Nombre</strong></td>
-									<td>${doctor.name}</td>
+									<td><span id="firstName">${doctor.name}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Apellidos</strong></td>
-									<td>${doctor.lastName}</td>
+									<td><span id="lastName">${doctor.lastName}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Tel&eacute;fono</strong></td>
-									<td>${doctor.telephone}</td>
+									<td><span id="telephone">${doctor.telephone}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Tipo de documento de identidad</strong></td>
-									<td>${doctor.identificationType}</td>
+									<td><span id="identificationType">${doctor.identificationType}</span></td>
 								</tr>
 								<tr>
 									<td><strong>Documento de identidad</strong></td>
-									<td>${doctor.identification}</td>
+									<td><span id="doctorId">${doctor.identification}</span></td>
 								</tr>
 							</tbody>
 						</table>

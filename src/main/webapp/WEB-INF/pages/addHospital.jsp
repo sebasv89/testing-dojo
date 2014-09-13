@@ -61,8 +61,7 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p> (esto si le toca
-							llenarlo a sebas :P)...select anidados (sin delay), el hospital no puede tener el mismo nombre</p>
+						<p> Este ejercicio tiene 2 select anidados (sin delay). Es necesario definir la jerarqu&iacute;a entre los Selects. Adem&aacute;s, el hospital no puede tener el mismo nombre.</p>
 					</div>
 				</div>
 

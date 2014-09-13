@@ -64,8 +64,7 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p> (esto si le toca
-							llenarlo a sebas :P)...utulizar plugings para usar un calendar sencillo, las cedulas de doctor y paciente ya creados</p>
+						<p> El reto de este ejercicio es el desarrollo de un pluging para usar un componente tipo calendar. Adem&aacute;s, se deben usar las identificationes de doctores y pacientes ya creados, por lo que es necesario primero insertar los dem&aacute;s datos</p>
 					</div>
 				</div>
 
