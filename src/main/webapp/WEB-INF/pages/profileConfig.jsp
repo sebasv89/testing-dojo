@@ -126,7 +126,7 @@
 	<script src="../resources/js/bootstrap.min.js"></script>
 	<script src="../resources/js/plugins/jqueryui/jquery-ui.min.js"></script>
 	<script src="../resources/js/plugins/multiselect/jquery.multiselect.js"></script>
-	<script src="../resources/js/app/perfil.js"></script>
+	<script src="../resources/js/app/profile.js"></script>
 
 </body>
 

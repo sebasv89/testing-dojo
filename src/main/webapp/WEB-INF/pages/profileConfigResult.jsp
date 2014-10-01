@@ -91,32 +91,32 @@
 				</c:if>
 				<div class="row">
 					<div class="col-md-4">
-						<img src="${perfil.perfilImage}" width="100%" height="auto"/>
+						<img src="${profile.profileImage}" width="100%" height="auto"/>
 					</div>
 					<div class="col-md-4">
 						<table class="table table-bordered table-striped">
 							<tbody>
 								<tr>
 									<td><strong>Nombre</strong></td>
-									<td>${perfil.name}</td>
+									<td>${profile.name}</td>
 								</tr>
 								<tr>
 									<td><strong>Apellidos</strong></td>
-									<td>${perfil.lastName}</td>
+									<td>${profile.lastName}</td>
 								</tr>
 								<tr>
 									<td><strong>Tel&eacute;fono</strong></td>
-									<td>${perfil.telephone}</td>
+									<td>${profile.telephone}</td>
 								</tr>
 								<tr>
 									<td><strong>Historial de enfermedades</strong></td>
 									<td>
-									${fn:join(perfil.diseaseHistory, ", ")}
+									${fn:join(profile.diseaseHistory, ", ")}
 									</td>
 								</tr>
 								<tr>
 									<td><strong>Documento de identidad</strong></td>
-									<td>${perfil.identification}</td>
+									<td>${profile.identification}</td>
 								</tr>
 							</tbody>
 						</table>

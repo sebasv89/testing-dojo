@@ -274,6 +274,55 @@ public class MainController {
 		return new ModelAndView("profileConfigResult");
 	}
 	
+	@RequestMapping("{username}/profileList")
+	public ModelAndView getprofileListPage(@PathVariable(value="username") String username, ModelMap model){
+		model.addAttribute("profileList", persistenceObjectMap.get(username).getProfileList());
+		return new ModelAndView("profileList");
+	}
+	
+	@RequestMapping("{username}/editProfile")
+	public ModelAndView getEditProfilePage(@PathVariable(value="username") String username, @RequestParam(required = true) String identification, ModelMap model){
+		if(persistenceObjectMap.get(username).getProfileList().get(identification) == null){
+			return new ModelAndView(new RedirectView("profileConfig"));
+		}
+		model.addAttribute("profile" , persistenceObjectMap.get(username).getProfileList().get(identification));
+		return new ModelAndView("editProfile");
+	}
+	
+	@RequestMapping(value = "{username}/editProfile", method = RequestMethod.POST)
+	public ModelAndView postEditProfilePage(@PathVariable(value="username") String username, HttpServletRequest request, ModelMap model){
+		MediumProfile profile = new MediumProfile();
+		profile.setDiseaseHistory(request.getParameterValues("diseaseHistory"));
+		profile.setName(request.getParameter("name"));
+		profile.setLastName(request.getParameter("lastName"));
+		profile.setTelephone(request.getParameter("telephone"));
+		profile.setIdentification(request.getParameter("identification"));
+		profile.setProfileImage(request.getParameter("profileImage"));
+		model.addAttribute("profile", profile);
+		List<String> errorList = new ArrayList<String>();
+		if (GenericValidator.isBlankOrNull(profile.getName())){
+			errorList.add(messageSource.getMessage("add_generic.name_required", null, null)) ;
+		}
+		if (GenericValidator.isBlankOrNull(profile.getIdentification())){
+			errorList.add(messageSource.getMessage("add_generic.identification_required", null, null)) ;
+		}
+		if(profile.getIdentification() != null && persistenceObjectMap.get(username).getProfileList().get(profile.getIdentification()) != null && errorList.size() == 0){
+			persistenceObjectMap.get(username).getProfileList().put(profile.getIdentification(), profile);
+		}else if(profile.getIdentification() != null && persistenceObjectMap.get(username).getProfileList().get(profile.getIdentification()) == null){
+			errorList.add(messageSource.getMessage("add_profile.identification_does_not_exist", null, null)) ;
+		}
+		model.addAttribute("errorList", errorList);
+		return new ModelAndView("addProfileResult");
+	}
+	
+	@RequestMapping(value = "{username}/removeProfile", method = RequestMethod.DELETE)
+	public @ResponseBody String removeProfilePage(@PathVariable(value="username") String username, @RequestParam(required = true) String identification, ModelMap model){
+		if(persistenceObjectMap.get(username).getProfileList().get(identification) != null){
+			persistenceObjectMap.get(username).getProfileList().remove(identification);
+		}
+		return "";
+	}
+	
 	// HARD PAGES
 	@RequestMapping("{username}/hospitalList")
 	public ModelAndView gethospotalListPage(@PathVariable(value="username") String username, ModelMap model){
