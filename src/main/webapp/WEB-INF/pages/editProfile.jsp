@@ -10,7 +10,7 @@
 <meta name="author" content="">
 <link href="../resources/img/favicon.ico" rel="shortcut icon"
 	type="image/vnd.microsoft.icon">
-<title>PSL - Crear Perfil</title>
+<title>PSL - Editar Perfil</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
@@ -86,8 +86,56 @@
 							</div>
 							<div class="form-group">
 								<label for="diseaseHistory">Historial de enfermedades: </label> <select class="form-control"
-									id="diseaseHistory">
-										
+									id="diseaseHistory" autocomplete="off" multiple="multiple">
+										<c:set var="contains" value="false" />
+										<c:forEach var="disease" items="${profile.diseaseHistory}">
+										  <c:if test="${disease eq 'Sarampión'}">
+										    <c:set var="contains" value="true" />
+										  </c:if>
+										</c:forEach>
+									<option ${contains? 'selected="selected"' : ''}>Sarampi&oacute;n</option>
+										<c:set var="contains" value="false" />
+										<c:forEach var="disease" items="${profile.diseaseHistory}">
+										  <c:if test="${disease eq 'Otitis'}">
+										    <c:set var="contains" value="true" />
+										  </c:if>
+										</c:forEach>
+									<option ${contains? 'selected="selected"' : ''}>Otitis</option>
+										<c:set var="contains" value="false" />
+										<c:forEach var="disease" items="${profile.diseaseHistory}">
+										  <c:if test="${disease eq 'Varicela'}">
+										    <c:set var="contains" value="true" />
+										  </c:if>
+										</c:forEach>
+									<option ${contains? 'selected="selected"' : ''}>Varicela</option>
+										<c:set var="contains" value="false" />
+										<c:forEach var="disease" items="${profile.diseaseHistory}">
+										  <c:if test="${disease eq 'Varicela'}">
+										    <c:set var="contains" value="true" />
+										  </c:if>
+										</c:forEach>
+									<option ${contains? 'selected="selected"' : ''}>C&oacute;lera</option>
+										<c:set var="contains" value="false" />
+										<c:forEach var="disease" items="${profile.diseaseHistory}">
+										  <c:if test="${disease eq 'Gripa'}">
+										    <c:set var="contains" value="true" />
+										  </c:if>
+										</c:forEach>
+									<option ${contains? 'selected="selected"' : ''}>Gripa</option>
+										<c:set var="contains" value="false" />
+										<c:forEach var="disease" items="${profile.diseaseHistory}">
+										  <c:if test="${disease eq 'Gastritis'}">
+										    <c:set var="contains" value="true" />
+										  </c:if>
+										</c:forEach>
+									<option ${contains? 'selected="selected"' : ''}>Gastritis</option>
+										<c:set var="contains" value="false" />
+										<c:forEach var="disease" items="${profile.diseaseHistory}">
+										  <c:if test="${disease eq 'Diarrea'}">
+										    <c:set var="contains" value="true" />
+										  </c:if>
+										</c:forEach>
+									<option ${contains? 'selected="selected"' : ''}>Diarrea</option>
 								</select>
 							</div>
 							
@@ -96,7 +144,7 @@
 								<label for="identification">Documento de identidad<span
 									class="text-danger">*</span>
 								</label> <input type="text" class="form-control" id="identification"
-									placeholder="Ingrese el documento de identidad">
+									placeholder="Ingrese el documento de identidad" value="${profile.identification}">
 							</div>
 							<div class="form-group">
 							    <label class="sr-only" for="profileImage">Foto de perfil</label>
@@ -124,7 +172,7 @@
 	<script src="../resources/js/bootstrap.min.js"></script>
 	<script src="../resources/js/plugins/jqueryui/jquery-ui.min.js"></script>
 	<script src="../resources/js/plugins/multiselect/jquery.multiselect.js"></script>
-	<script src="../resources/js/app/profile.js"></script>
+	<script src="../resources/js/app/edit-profile.js"></script>
 
 </body>
 

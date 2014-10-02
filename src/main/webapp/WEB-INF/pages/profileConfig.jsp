@@ -84,11 +84,11 @@
 							</div>
 							<div class="form-group">
 								<label for="diseaseHistory">Historial de enfermedades: </label> <select class="form-control"
-									id="diseaseHistory">
+									id="diseaseHistory" multiple="multiple" autocoomplete="off">
 									<option>Sarampi&oacute;n</option>
 									<option>Otitis</option>
 									<option>Varicela</option>
-									<option>Cóler&aacute;</option>
+									<option>C&oacute;lera</option>
 									<option>Gripa</option>
 									<option>Gastritis</option>
 									<option>Diarrea</option>

@@ -251,7 +251,8 @@ public class MainController {
 	@RequestMapping(value = "{username}/profileConfig", method = RequestMethod.POST)
 	public ModelAndView postProfileConfigPage(@PathVariable(value="username") String username, HttpServletRequest request, ModelMap model){
 		MediumProfile profile = new MediumProfile();
-		profile.setDiseaseHistory(request.getParameterValues("diseaseHistory"));
+		String [] tempDiseaseArray = request.getParameterValues("diseaseHistory");
+		profile.setDiseaseHistory((tempDiseaseArray.length == 1)? tempDiseaseArray[0].split(","): new String[0]);
 		profile.setName(request.getParameter("name"));
 		profile.setLastName(request.getParameter("lastName"));
 		profile.setTelephone(request.getParameter("telephone"));
@@ -312,7 +313,7 @@ public class MainController {
 			errorList.add(messageSource.getMessage("add_profile.identification_does_not_exist", null, null)) ;
 		}
 		model.addAttribute("errorList", errorList);
-		return new ModelAndView("addProfileResult");
+		return new ModelAndView("perfilConfigResult");
 	}
 	
 	@RequestMapping(value = "{username}/removeProfile", method = RequestMethod.DELETE)
