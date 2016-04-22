@@ -49,7 +49,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="page-header">
-							Testing Dojo <small> Lista de doctores</small>
+							<small> Lista de hospitales</small>
 						</h1>
 						<!--                         <ol class="breadcrumb"> -->
 						<!--                             <li class="active"> -->
@@ -63,7 +63,7 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p>recorrer la tabla en busca del hospital recien creado, dropdown, alerts, ajax (para remover) y link para EDITAR (otro punto distinto)</p>
+						<p>Permite verificar los hospitales creados y sus datos.</p>
 					</div>
 				</div>
 				<div class="row">

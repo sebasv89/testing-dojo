@@ -61,7 +61,10 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p>Selects con Class names (input, select, radio, disable)</p>
+						<p>Esta pantalla permite agregar habitaciones a la aplicaci&oacute;n. No se permiten caracteres alfab&eacute;ticos en el c&oacute;digo de la habitaci&oacute;n.</p>
+						<p>DirecTV solo se permite en habitaciones de lujo. Sin embargo las habitaciones de lujo no permiten ser dobles. El n&uacute;mero de habitaci&oacute;n debe ser &uacute;nico.</p>
+						<p>Una vez se intente crear una habitaci&oacute;n, en la siguiente pantalla se presentan los mensajes de &eacute;xito o de error, junto con una confirmaci&oacute;n de los datos ingresados. </p>
+						<p>A menos que se le haya indicado algo diferente, dise&ntilde;e y automatice los casos de pruebas que considere convenientes para esta pantalla.</p>
 					</div>
 				</div>
 
@@ -101,7 +104,7 @@
 						<p>Caracteristicas de la habitaci&oacute;n</p>
 						<div class="simple">
 							<div class="checkbox">
-								<label> <input type="checkbox" value=""> habitaci&oacute;n doble
+								<label> <input type="checkbox" value=""> Habitaci&oacute;n doble
 								</label>
 							</div>
 						</div>

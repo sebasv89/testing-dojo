@@ -47,7 +47,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="page-header">
-							Testing Dojo <small> Agregar hospital</small>
+							<small> Agregar hospital</small>
 						</h1>
 						<!--                         <ol class="breadcrumb"> -->
 						<!--                             <li class="active"> -->
@@ -61,7 +61,10 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p> Este ejercicio tiene 2 select anidados (sin delay). Es necesario definir la jerarqu&iacute;a entre los Selects. Adem&aacute;s, el hospital no puede tener el mismo nombre.</p>
+						<p>Esta pantalla permite agregar hospitales a la aplicaci&oacute;n. </p>
+						<p>El c&oacute;digo del hospital debe ser &uacute;nico. El nombre y Direcci&oacute;n son requeridos.</p>
+						<p>Una vez se intente crear una habitaci&oacute;n, en la siguiente pantalla se presentan los mensajes de &eacute;xito o de error, junto con una confirmaci&oacute;n de los datos ingresados. </p>
+						<p>La verificaci&oacute;n de estos datos se debe realizar en la opci&oacute;n <a href="hospitalList">Ver Hospitales</a> y en el servicio REST: PENDIENTE</p>
 					</div>
 				</div>
 

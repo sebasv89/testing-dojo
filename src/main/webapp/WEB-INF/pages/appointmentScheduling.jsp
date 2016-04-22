@@ -50,7 +50,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="page-header">
-							Testing Dojo <small> Agendar cita</small>
+							<small> Agendar cita</small>
 						</h1>
 						<!--                         <ol class="breadcrumb"> -->
 						<!--                             <li class="active"> -->
@@ -64,8 +64,12 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p> El reto de este ejercicio es el desarrollo de un pluging para usar un componente tipo calendar. Adem&aacute;s, se deben usar las identificationes de doctores y pacientes ya creados, por lo que es necesario primero insertar los dem&aacute;s datos</p>
-					</div>
+						<p>Permite agregar una cita entre un doctor y un paciente. Tanto el doctor como el paciente deben estar previamente creados. Se debe ingresar el documento de identidad de ambos</p>
+						<p>Se deben usar fechas mayores a la fecha actual.</p>
+						<p>Una vez se intente crear una cita en la siguiente pantalla se presentan los mensajes de &eacute;xito o de error, junto con una confirmaci&oacute;n de los datos ingresados. </p>
+						<p>A menos que se le haya indicado algo diferente, dise&ntilde;e y automatice los casos de pruebas que considere convenientes para esta pantalla.</p>
+				
+						</div>
 				</div>
 
 				<div class="row">

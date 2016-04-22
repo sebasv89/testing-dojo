@@ -44,7 +44,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="page-header">
-							<small>Ejercicios de automatizaci&oacute;n</small>
+							<small>Ejercicios de automatizaci&oacute;n - Sistema de administraci&oacute;n de hospitales</small>
 						</h1>
 						<!--                         <ol class="breadcrumb"> -->
 						<!--                             <li class="active"> -->
@@ -63,19 +63,22 @@
 									<div class="col-md-4">
 										<div class="list-group">
 											<a href="addDoctor" class="list-group-item"><i
-												class="fa fa-fw fa-tasks"></i> Agregar doctor<i
+												class="fa fa-fw fa-tasks"></i> Agregar Doctor<i
 												class="fa fa-arrow-circle-right pull-right text-success"></i></a>
 											<a href="addPatient" class="list-group-item"><i
-												class="fa fa-fw fa-tasks"></i> Agregar paciente<i
+												class="fa fa-fw fa-tasks"></i> Agregar Paciente<i
 												class="fa fa-arrow-circle-right pull-right text-success"></i></a>
 											<a href="addRoom" class="list-group-item"><i
 												class="fa fa-fw fa-tasks"></i> Agregar Habitaci&oacute;n<i
 												class="fa fa-arrow-circle-right pull-right text-success"></i></a>
 											<a href="addHospital" class="list-group-item"><i
-												class="fa fa-fw fa-tasks"></i> Agregar hospital<i
+												class="fa fa-fw fa-tasks"></i> Agregar Hospital<i
+												class="fa fa-arrow-circle-right pull-right text-success"></i></a>
+											<a href="hospitalList" class="list-group-item"><i
+												class="fa fa-fw fa-tasks"></i> Ver Hospitales<i
 												class="fa fa-arrow-circle-right pull-right text-success"></i></a>
 											<a href="appointmentScheduling" class="list-group-item"><i
-												class="fa fa-fw fa-tasks"></i> Agendar cita<i
+												class="fa fa-fw fa-tasks"></i> Agendar Cita<i
 												class="fa fa-arrow-circle-right pull-right text-success"></i></a>
 
 

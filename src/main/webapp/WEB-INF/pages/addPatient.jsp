@@ -47,7 +47,7 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="page-header">
-							Testing Dojo <small> Agregar paciente</small>
+							<small> Agregar paciente</small>
 						</h1>
 						<!--                         <ol class="breadcrumb"> -->
 						<!--                             <li class="active"> -->
@@ -61,7 +61,8 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p> Intenta usar el tag name de selenium para este ejercicio(input, select, checkbox)</p>
+						<p>Tener pacientes en la base de datos es un prerequisito para agendar citas. El nombre y el apellido son obligatorios, y el documento de identidad debe ser &uacute;nico. Por favor seleccione la opci&oacute;n de Salud Prepagada</p>
+						<p>En la siguiente pantalla se muestran los mensajes de error o &eacute;xito y se confirma la informaci&oacute;n que se guard&oacute;</p>
 					</div>
 				</div>
 

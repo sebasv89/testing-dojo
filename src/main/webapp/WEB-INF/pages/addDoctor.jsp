@@ -8,7 +8,7 @@
 <meta name="author" content="">
 <link href="../resources/img/favicon.ico" rel="shortcut icon"
 	type="image/vnd.microsoft.icon">
-<title>PSL - Agregar Doctor</title>
+<title>Agregar Doctor</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="../resources/css/bootstrap.min.css" rel="stylesheet">
@@ -32,19 +32,18 @@
 <body>
 
 	<div id="wrapper">
-
-		<jsp:include page="header.jsp" >
+		<jsp:include page="header.jsp">
 			<jsp:param name="level" value="1" />
 		</jsp:include>
 
-		<div id="page-wrapper">
+       	<div id="page-wrapper">
 
 			<div class="container-fluid">
 				<!-- Page Heading -->
 				<div class="row">
 					<div class="col-lg-12">
 						<h1 class="page-header">
-							Testing Dojo <small> Agregar doctor</small>
+							<small> Agregar doctor</small>
 						</h1>
 						<!--                         <ol class="breadcrumb"> -->
 						<!--                             <li class="active"> -->
@@ -58,7 +57,9 @@
 						<h3 class="panel-title">Informaci&oacute;n:</h3>
 					</div>
 					<div class="panel-body">
-						<p> Este es un buen ejercicio para que retomes la automatizaci&oacute;n. Los elementos tienen Ids. Recuerda validar campos obligatorios, y hacer Asserts con el resultado.</p>
+						<p>Esta pantalla permite agregar doctores a la aplicaci&oacute;n. El nombre y el apellido es obligatorio. El documento de identidad debe ser &uacute;nico.</p>
+						<p>Una vez se intente crear un doctor, en la siguiente pantalla se presentan los mensajes de &eacute;xito o de error, junto con una conformaci&oacute;n de los datos ingresados. </p>
+						<p>A menos que se le haya indicado algo diferente, dise&ntilde;e y automatice los casos de pruebas que considere convenientes para esta pantalla.</p>
 					</div>
 				</div>
 
