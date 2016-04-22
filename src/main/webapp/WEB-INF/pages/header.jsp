@@ -14,7 +14,7 @@
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav side-nav">
 			<li ${(param.level == 0)? 'class="active"': ''}><a href="home"><i
-					class="fa fa-fw fa-home"></i> Inicio</a></li>
+					class="fa fa-fw fa-home"></i> Indsadasdsaicio</a></li>
 			<li ${(param.level == 1)? 'class="active"': ''}><a ><i class="fa fa-fw fa-star"></i>
 					F&aacute;cil</a></li>
 			<li ${(param.level == 2)? 'class="active"': ''}><a ><i class="fa fa-fw fa-star"></i><i
